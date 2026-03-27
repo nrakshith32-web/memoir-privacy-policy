@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Memoir - Memory Diary</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #faf8f5;
+      color: #1c1a17;
+      line-height: 1.75;
+      font-size: 16px;
+      padding: 0 16px 80px;
+    }
+
+    .page {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 2px solid #1c1a17;
+      margin-bottom: 40px;
+    }
+
+    .app-name {
+      font-size: 0.75rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8f6a28;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: normal;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: #1c1a17;
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.82rem;
+      color: #5a5248;
+    }
+
+    .intro-box {
+      background: #fff8ec;
+      border-left: 3px solid #8f6a28;
+      border-radius: 0 6px 6px 0;
+      padding: 18px 22px;
+      margin-bottom: 44px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.92rem;
+      color: #3a3020;
+      line-height: 1.65;
+    }
+
+    .intro-box strong {
+      color: #8f6a28;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: normal;
+      letter-spacing: -0.01em;
+      color: #1c1a17;
+      margin: 44px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #d8d3ca;
+    }
+
+    h3 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8f6a28;
+      margin: 28px 0 8px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #2a2520;
+    }
+
+    ul {
+      margin: 0 0 16px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    ul li {
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 8px;
+      color: #2a2520;
+    }
+
+    ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: #8f6a28;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 20px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 13px;
+      border-radius: 999px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1.5px solid;
+    }
+
+    .badge.green {
+      background: #f0faf4;
+      border-color: #2e7a4a;
+      color: #1e5a34;
+    }
+
+    .badge.amber {
+      background: #fff8ec;
+      border-color: #8f6a28;
+      color: #6a4a10;
+    }
+
+    .badge.blue {
+      background: #eef4fc;
+      border-color: #2e5fa0;
+      color: #1a3f78;
+    }
+
+    .permission-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.84rem;
+    }
+
+    .permission-table th {
+      text-align: left;
+      padding: 9px 14px;
+      background: #f0ece6;
+      color: #5a5248;
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      border-bottom: 2px solid #c4bfb5;
+    }
+
+    .permission-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e8e3db;
+      vertical-align: top;
+      color: #2a2520;
+    }
+
+    .permission-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .permission-table td:first-child {
+      font-weight: 600;
+      color: #1c1a17;
+      white-space: nowrap;
+    }
+
+    .contact-box {
+      margin-top: 48px;
+      padding: 24px 28px;
+      background: #f0ece6;
+      border-radius: 8px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.88rem;
+      color: #3a3020;
+    }
+
+    .contact-box strong {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8f6a28;
+      margin-bottom: 8px;
+    }
+
+    .contact-box a {
+      color: #2e5fa0;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #d8d3ca;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #8a857e;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      .permission-table { font-size: 0.78rem; }
+      .permission-table td:first-child { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <p class="app-name">Memoir - Memory Diary</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: 27 March 2026 &nbsp;·&nbsp; Last updated: 27 March 2026</p>
+  </header>
+
+  <div class="intro-box">
+    <strong>The short version:</strong> Memoir - Memory Diary is a fully offline, on-device journal. Everything you write, photograph, and record stays on your device only. We do not collect, transmit, or store any of your personal data on external servers. We have no access to your journal entries, photos, or audio recordings.
+  </div>
+
+  <div class="badge-row">
+    <span class="badge green">✓ No data leaves your device</span>
+    <span class="badge green">✓ No analytics or tracking</span>
+    <span class="badge green">✓ No ads</span>
+    <span class="badge green">✓ No third-party data sharing</span>
+    <span class="badge amber">○ Optional permissions, on request only</span>
+  </div>
+
+
+  <h2>1. Who We Are</h2>
+
+  <p>Memoir - Memory Diary ("the App", "we", "us", or "our") is a personal journaling application. References to "you" or "your" mean you, the person using the App. Please replace <em>Rakshith N</em> and <em>nrakshith32@gmail.com</em> throughout this policy with your actual details before publishing.</p>
+
+
+  <h2>2. What Data the App Stores — and Where</h2>
+
+  <h3>Stored entirely on your device</h3>
+  <p>All app data is stored locally using your device's browser storage technologies (IndexedDB and localStorage). This includes:</p>
+  <ul>
+    <li>Your username and hashed password (hashed with PBKDF2 — your actual password is never stored)</li>
+    <li>Journal entries: captions, dates, moods, tags, and locations you choose to add</li>
+    <li>Photos and images you attach to entries</li>
+    <li>Audio recordings you create within the App</li>
+    <li>App preferences: theme, font size, PIN lock settings, reminders</li>
+    <li>Streak and badge data</li>
+  </ul>
+
+  <p><strong>None of this data is transmitted to us or any third party.</strong> It never leaves your device unless you explicitly choose to export or share it yourself.</p>
+
+  <h3>No account registration required on our servers</h3>
+  <p>Account creation (username and password) is handled entirely on-device. There is no server-side account database. Your credentials are stored only in your device's local storage.</p>
+
+
+  <h2>3. Device Permissions</h2>
+
+  <p>The App may request the following device permissions. Each is optional and only requested when you choose to use the corresponding feature. You can deny any permission without affecting unrelated features.</p>
+
+  <table class="permission-table">
+    <thead>
+      <tr>
+        <th>Permission</th>
+        <th>Why it's needed</th>
+        <th>When requested</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Camera</td>
+        <td>To capture photos directly in the App for journal entries</td>
+        <td>Only when you tap the camera button in the entry form</td>
+      </tr>
+      <tr>
+        <td>Microphone</td>
+        <td>To record voice memos or use voice-to-text for captions</td>
+        <td>Only when you tap the record or voice-to-text button</td>
+      </tr>
+      <tr>
+        <td>Location (Geolocation)</td>
+        <td>To optionally tag an entry with your current location</td>
+        <td>Only when you tap the location pin button in the entry form</td>
+      </tr>
+      <tr>
+        <td>Notifications</td>
+        <td>To send optional on-device reminders you schedule yourself</td>
+        <td>Only when you set up a reminder in the App's reminder settings</td>
+      </tr>
+      <tr>
+        <td>Storage / Files</td>
+        <td>To let you attach photos or audio files from your device to entries</td>
+        <td>Only when you use the file upload button</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Photos, recordings, and location data captured via these permissions are saved only to your local device storage within the App. They are not uploaded anywhere.</p>
+
+
+  <h2>4. Third-Party Services</h2>
+
+  <h3>Fonts (Google Fonts)</h3>
+  <p>The App loads two typefaces — Cormorant Garamond and DM Sans — from Google Fonts (fonts.googleapis.com / fonts.gstatic.com). This is a one-time network request made when the App loads. Google may log your IP address as part of this request, subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>. No personal journal data is involved in this request.</p>
+
+  <h3>PDF library (cdnjs.cloudflare.com)</h3>
+  <p>When the App first loads, it fetches the jsPDF library from Cloudflare's CDN to power the PDF export feature. Cloudflare may log your IP address. No personal data from your journal is sent in this request.</p>
+
+  <h3>No other third-party services</h3>
+  <p>The App does not use analytics platforms, advertising networks, crash-reporting services, social login providers, or any other third-party SDKs that collect data about you.</p>
+
+
+  <h2>5. Data Export and Backup</h2>
+
+  <p>The App includes a backup and export feature that lets you download your journal data as a local file. This export happens entirely on your device — the data goes directly to your device's downloads folder. We never receive a copy.</p>
+
+  <p>The App also supports PDF export of your journal. PDF generation happens locally using the jsPDF library. No data is sent to any server during export.</p>
+
+  <p>If you choose to share a memory using your device's native share sheet, the sharing is handled entirely by your device's operating system. We do not control where you share your data.</p>
+
+
+  <h2>6. Children's Privacy</h2>
+
+  <p>The App is not directed at children under the age of 13 (or the applicable minimum age in your jurisdiction). We do not knowingly collect any personal data from children. Because all data is stored locally on the user's own device and is never transmitted to us, we have no means of identifying the age of any user. If you are a parent or guardian and believe your child has provided personal information through this App, please contact us and we will assist you.</p>
+
+
+  <h2>7. Data Security</h2>
+
+  <p>Your journal data is protected by the security of your device. The App provides an optional PIN lock feature to add an additional layer of access control. Passwords are never stored in plain text — they are hashed using PBKDF2 with a random salt before being saved to local storage.</p>
+
+  <p>Because your data never leaves your device through our systems, a data breach on our end cannot expose your journal entries. The security of your data depends primarily on the security of your device itself.</p>
+
+
+  <h2>8. Data Deletion</h2>
+
+  <p>You are in full control of your data at all times.</p>
+  <ul>
+    <li>You can delete individual entries from within the App at any time.</li>
+    <li>You can delete all app data by clearing the App's storage in your device settings, or by uninstalling the App.</li>
+    <li>Because we do not hold any of your data on our servers, there is nothing for us to delete on your behalf.</li>
+  </ul>
+
+
+  <h2>9. Changes to This Policy</h2>
+
+  <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of the App after changes are posted constitutes your acceptance of the revised policy.</p>
+
+  <p>We will notify you of material changes by posting a prominent notice within the App or on the App's Google Play store listing.</p>
+
+
+  <h2>10. Your Rights</h2>
+
+  <p>Because we do not collect or hold your personal data, most data-subject rights (access, rectification, erasure, portability) can be exercised directly through the App itself or by managing your device's local storage. If you have any questions about your rights or believe we have inadvertently collected personal data, please contact us using the details below.</p>
+
+  <p>If you are in the European Economic Area (EEA), United Kingdom, or California, you may have additional rights under the GDPR, UK GDPR, or CCPA respectively. Given the purely local nature of the App, we do not act as a data controller for your journal content. However, if you have concerns, please reach out and we will do our best to assist.</p>
+
+
+  <h2>11. Contact Us</h2>
+
+  <div class="contact-box">
+    <strong>Questions about this policy?</strong>
+    If you have any questions, concerns, or requests relating to this Privacy Policy or the App's data practices, please contact us at:<br><br>
+    <strong>Rakshith N</strong><br>
+    Email: <a href="mailto:nrakshith32@gmail.com">nrakshith32@gmail.com</a><br>
+    <br>
+    We aim to respond to all privacy-related enquiries within 30 days.
+  </div>
+
+
+  <footer>
+    <p>Memoir - Memory Diary &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Effective 27 March 2026</p>
+    <p style="margin-top:6px;">This policy was prepared for use on Google Play. Host this page at a stable public URL and link to it in your Google Play Console under <em>App content → Privacy policy</em>.</p>
+  </footer>
+
+</div>
+</body>
+</html>
